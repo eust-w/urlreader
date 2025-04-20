@@ -1,0 +1,37 @@
+### 1. 解析网页内容 /api/parse
+POST http://localhost:8080/api/parse
+Content-Type: application/json
+
+{
+  "url": "https://baidu.com"
+}
+
+###
+
+### 2. 网页内容多轮对话 /api/chat
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "url": "https://baidu.com",
+  "message": "请总结这个网页的内容",
+  "model": "azure_openai"
+}
+
+###
+
+### 3. 获取所有对话ID /api/conversations
+GET http://localhost:8080/api/conversations
+
+###
+
+### 4. 查询指定对话历史 /api/history/:conversation_id
+# 请将 {conversation_id} 替换为实际返回的ID
+GET http://localhost:8080/api/history/925d880b-751a-4076-b8a1-752069508ece
+
+###
+
+### 5. 删除指定对话 /api/history/:conversation_id
+# 请将 {conversation_id} 替换为实际返回的ID
+DELETE http://localhost:8080/api/history/925d880b-751a-4076-b8a1-752069508ece
+

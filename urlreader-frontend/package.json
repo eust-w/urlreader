@@ -1,0 +1,29 @@
+{
+  "name": "urlreader-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "antd": "^5.13.1",
+    "axios": "^1.6.7",
+    "highlight.js": "^11.11.1",
+    "i18next": "^23.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.2.2",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.22.3",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.62",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.8"
+  }
+}
